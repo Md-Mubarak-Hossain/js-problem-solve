@@ -19,24 +19,17 @@ shoppingCart = [
     { name: 'iphone', price: 60200 },
     { name: 'nokia', price: 1600 },
     { name: 'itel', price: 10000 },
-]
+];
 function cheapestPhone(phones) {
     let cheapest = phones[0];
     for (let i = 0; i < phones.length; i++) {
         let cheapPhon = phones[i];
-        if (cheapPhon.price < cheapest) {
-            let cheap = phones;
-            return cheap;
+        if (cheapest.price < cheapPhon.price) {
+            let cheap = cheapest;
+            console.log(cheap);
         }
-
-
-
-
-
+        // console.log(cheapest);
     }
-
-
-
 }
 const mySelection = cheapestPhone(shoppingCart);
-console.log(mySelection);
+// console.log(mySelection);
